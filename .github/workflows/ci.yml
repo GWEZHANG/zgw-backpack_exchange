@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   build:
-    # 指定操作系统
+    # 指定操作系统更新
     runs-on: ubuntu-latest
     steps:
       # 将代码拉到虚拟机

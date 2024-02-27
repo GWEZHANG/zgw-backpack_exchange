@@ -15,7 +15,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       # 依赖缓存策略
       - name: Cache
@@ -36,8 +36,8 @@ jobs:
       - name: Running Build
         run: pnpm run build
       # 测试
-      #- name: Running Test
-        #run: pnpm run test-unit
+      - name: Running Test
+        run: pnpm run test-unit
       # 发布
       - name: Running Publish
         run: npm publish
